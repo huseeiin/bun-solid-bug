@@ -19,5 +19,5 @@ export function add() {
 }
 
 export function del(id: string) {
-  db.db.prepare("DELETE * FROM ids WHERE id = ?").run(id);
+  db.db.prepare("DELETE FROM ids WHERE id = ?").run(id);
 }
